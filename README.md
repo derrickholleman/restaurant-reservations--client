@@ -1,7 +1,7 @@
 # Thinkful-Final-Capstone: Restaurant Reservation System
 
 ## Deployed Application
-[Restaurant Reservations](https://res-rev-capstone-frontend.herokuapp.com/dashboard)
+[Restaurant Reservations](https://dh-restaurant-reservations.netlify.app)
 
 ## Server Repo 
 [Restaurant Reservations Server](https://github.com/derrickholleman/restaurant-reservation-server)
