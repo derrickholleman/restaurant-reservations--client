@@ -1,4 +1,4 @@
-# Thinkful-Final-Capstone: Restaurant Reservation System
+# Restaurant Reservation System
 
 ## Deployed Application
 [Restaurant Reservations](https://dh-restaurant-reservations.netlify.app)
