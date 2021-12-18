@@ -10,9 +10,7 @@ const Search = () => {
   const [error, setError] = useState(false);
   const [noResults, setNoResults] = useState(false);
 
-  const handleChange = (e) => {
-    setSearchNumber(e.target.value);
-  };
+  
 
   async function handleSubmit(e) {
     e.preventDefault();
