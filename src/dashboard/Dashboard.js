@@ -123,9 +123,14 @@ function Dashboard() {
       {reservations.length > 0 ? (
         <h1 className="text-center dashboard-section-header">Reservations</h1>
       ) : (
-        <h1 className="text-center dashboard-section-header">
-          No Reservations
-        </h1>
+        <div className="text-center">
+          <h1 className="dashboard-section-header">No Reservations</h1>
+          <a href="reservations/new">
+            <Button className="primary-btn" variant="contained" sx={{ mt: 1 }}>
+              Add A Reservation?
+            </Button>
+          </a>
+        </div>
       )}
       <ReservationsList reservations={reservations} />
 
