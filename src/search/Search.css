@@ -6,6 +6,12 @@
 
 @media screen and (max-width: 360px) {
   .search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 100%;
+  }
+  .search-form input {
+    margin-bottom: 0rem;
   }
 }
