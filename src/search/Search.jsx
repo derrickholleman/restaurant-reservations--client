@@ -48,14 +48,7 @@ const Search = () => {
       <h1 className="search-header">Search by Phone Number</h1>
       <ErrorAlert error={error} />
       <form className="search-form">
-        <input
-          type="text"
-          name="mobile_number"
-          value={searchNumber}
-          onChange={handleChange}
-          placeholder="123-456-7890"
-          required
-        />
+        
         <button type="submit">
           <span className="oi oi-magnifying-glass"></span>
         </button>
