@@ -40,9 +40,9 @@ const TableList = ({ table, loadDashboard }) => {
       <hr />
       <p>Capacity: {table.capacity}</p>
       <p data-table-id-status={`${table.table_id}`}>
-        Status: {table.reservation_id ? "Occupied by " : "Free"}
+        Status: {table.reservation_id ? <span className="text-danger">Occupied by </span> : <span>Free</span>}
         {foundRes && (
-          <span>
+          <span className="text-danger">
             {foundRes.first_name} {foundRes.last_name}
           </span>
         )}
