@@ -47,7 +47,7 @@ const Search = () => {
     <div className="text-center" onSubmit={handleSubmit}>
       <h1 className="search-header">Search by Phone Number</h1>
       <ErrorAlert error={error} />
-      <form>
+      <form className="search-form">
         <input
           type="text"
           name="mobile_number"
