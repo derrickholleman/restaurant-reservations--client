@@ -34,14 +34,15 @@ This application allows a user to create, edit, and cancel a reservation. Create
 * JavaScript
 * Node
 * Express
+* Knex
 * PostgreSQL
 * HTML
 * CSS
 * Bootstrap
 * Material UI
-* Open Iconic for icons
-* Heroku
-* Netlify
+* Open Iconic and Bootstrap Icons
+* Heroku for back-end deployment
+* Netlify for front-end deployment
 
 ## API Documentation
 
