@@ -20,7 +20,7 @@ function Menu() {
   const classes = useStyles()
 
   return (
-    <nav className="ml-2">
+    <nav>
       <Button
         className="primary-btn"
         onClick={toggleDrawer}
