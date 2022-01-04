@@ -13,6 +13,10 @@ a:hover {
   font-size: clamp(2.5rem, 5vw, 3rem);
 }
 
+nav {
+  margin-left: 2rem;
+}
+
 .nav-btns {
   margin: 1rem auto;
   display: flex;
@@ -35,6 +39,9 @@ button:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  nav {
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 560px) {
