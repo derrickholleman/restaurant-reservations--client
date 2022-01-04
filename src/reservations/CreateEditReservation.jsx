@@ -9,6 +9,8 @@ import {
 import { useHistory, useParams } from "react-router-dom";
 import ErrorAlert from "../layout/ErrorAlert";
 const dayjs = require("dayjs");
+const utc = require("dayjs/plugin/utc");
+dayjs.extend(utc);
 
 const CreateEditReservation = () => {
   const [error, setError] = useState(null);
@@ -136,7 +138,7 @@ const CreateEditReservation = () => {
               id="reservation_date"
               min={dayjs().format("YYYY-MM-DD")}
               pattern="\d{4}-\d{2}-\d{2}"
-              value={dayjs(formData.reservation_date).format("YYYY-MM-DD")}
+              value={dayjs.utc(formData.reservation_date).format("YYYY-MM-DD")}
               onChange={handleChange}
               required
             />
