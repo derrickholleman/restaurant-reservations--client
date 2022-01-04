@@ -130,19 +130,7 @@ const CreateEditReservation = () => {
           <label htmlFor="reservation_date">
             Date of Reservation (closed on Tuesdays)
           </label>
-          {reservationId ? (
-            <input
-              type="date"
-              name="reservation_date"
-              className="form-control"
-              id="reservation_date"
-              min={dayjs().format("YYYY-MM-DD")}
-              pattern="\d{4}-\d{2}-\d{2}"
-              value={dayjs.utc(formData.reservation_date).format("YYYY-MM-DD")}
-              onChange={handleChange}
-              required
-            />
-          ) : (
+
             <input
               type="date"
               name="reservation_date"
@@ -154,7 +142,7 @@ const CreateEditReservation = () => {
               onChange={handleChange}
               required
             />
-          )}
+          
           <label htmlFor="reservation_time">Time of Reservation</label>
           <input
             type="time"
