@@ -39,6 +39,9 @@ const CreateEditReservation = () => {
             abortController.signal
           );
           setFormData(resResponse);
+        } else {
+          // if navigating to create route directly from edit route, clear the form
+          setFormData({ ...initialFormState })
         }
       } catch (err) {
         setError(err);
