@@ -9,8 +9,6 @@ import {
 import { useHistory, useParams } from "react-router-dom";
 import ErrorAlert from "../layout/ErrorAlert";
 const dayjs = require("dayjs");
-const utc = require("dayjs/plugin/utc");
-dayjs.extend(utc);
 
 const CreateEditReservation = () => {
   const [error, setError] = useState(null);
